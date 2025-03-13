@@ -11,6 +11,8 @@
   --title-text-color: #000028;
   --paragraph-text-color: #F1B2CE;
   --stroke-color: #FF0070;
+  --outline-on-hover-color: rgba(255, 0, 112, 0.4);
+  --outline-on-focus-visible: #F1B2CE;
   --page-bg: url(/images/cover-image-dark.png);
   /* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,
@@ -29,5 +31,23 @@
 @media (width >=1024px) {
   .theme-dark .hard-to-focus {
     padding-block-start: 60px;
+  }
+
+  .header__theme-menu-button_type_dark:hover {
+    outline: 1px solid var(--outline-on-hover-color);
+  }
+
+  .header__theme-menu-button_type_dark:focus-visible {
+    outline: none;
+    border-bottom: 1px solid var(--outline-on-focus-visible);
+  }
+
+  .theme-dark .text-link:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+
+  .theme-dark .text-link:focus-visible {
+    outline: 1px solid var(--outline-on-focus-visible);
   }
 }

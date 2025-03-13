@@ -11,6 +11,8 @@
   --title-text-color: #353430;
   --paragraph-text-color: #353430;
   --stroke-color: #353430;
+  --outline-on-focus-visible: #353430;
+  --outline-on-hover-color: rgba(50, 49, 45, 0.4);
   --page-bg: url(/images/cover-image-light.png);
   /* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,
@@ -43,6 +45,8 @@
     --title-text-color: #353430;
     --paragraph-text-color: #353430;
     --stroke-color: #353430;
+    --outline-on-focus-visible: #353430;
+    --outline-on-hover-color: rgba(50, 49, 45, 0.4);
     --page-bg: url(/images/cover-image-light.png);
   }
 
@@ -50,4 +54,41 @@
     display: none;
   }
 
+  @media (width >=1024px) {
+    .header__theme-menu-button_type_light:hover {
+      outline: 1px solid var(--outline-on-hover-color);
+    }
+
+    .header__theme-menu-button_type_light:focus-visible {
+      outline: none;
+      border-bottom: 1px solid var(--outline-on-focus-visible);
+    }
+
+    .header__theme-menu-button_type_auto:hover {
+      outline: 1px solid var(--outline-on-hover-color);
+    }
+
+    .header__theme-menu-button_type_auto:focus-visible {
+      outline: none;
+      border-bottom: 1px solid var(--outline-on-focus-visible);
+    }
+
+    .theme-light .text-link:hover {
+      text-decoration: underline;
+      cursor: pointer;
+    }
+
+    .theme-light .text-link:focus-visible {
+      outline: 1px solid var(--outline-on-focus-visible);
+    }
+
+    .theme-auto .text-link:hover {
+      text-decoration: underline;
+      cursor: pointer;
+    }
+
+    .theme-auto .text-link:focus-visible {
+      outline: 1px solid var(--outline-on-focus-visible);
+    }
+  }
 }
