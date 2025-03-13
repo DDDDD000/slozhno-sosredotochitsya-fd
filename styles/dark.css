@@ -18,6 +18,18 @@
   */
 }
 
-.theme-dark .page {
-  /* Вам также нужно будет написать ряд подобных селекторов */
+.theme-dark .page {}
+
+/* Вам также нужно будет написать ряд подобных селекторов */
+@media (width >=768px) {
+
+  .theme-dark .hard-to-focus {
+    padding-block-start: 68px;
+  }
+}
+
+@media (width >=1024px) {
+  .theme-dark .hard-to-focus {
+    padding-block-start: 60px;
+  }
 }
