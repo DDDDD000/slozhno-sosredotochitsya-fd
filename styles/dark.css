@@ -5,6 +5,13 @@
 */
 
 :root.theme-dark {
+  --main-title-color: #DB00FF;
+  --page-bg-color: #000028;
+  --accent-color: #FF0070;
+  --title-text-color: #000028;
+  --paragraph-text-color: #F1B2CE;
+  --stroke-color: #FF0070;
+  --page-bg: url(/images/cover-image-dark.png);
   /* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
