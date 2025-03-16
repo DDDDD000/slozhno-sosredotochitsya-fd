@@ -12,6 +12,7 @@
   --stroke-color: #FF0070;
   --outline-on-hover-color: rgba(255, 0, 112, 0.4);
   --outline-on-focus-visible: #F1B2CE;
+  --underline-on-hover: #F1B2CE;
   --page-bg: url(/images/cover-image-dark.png);
   --after-paragraph-margin: 20px;
   --after-title-margin: 20px;
