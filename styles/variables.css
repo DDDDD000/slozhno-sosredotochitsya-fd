@@ -13,6 +13,7 @@
   --outline-on-hover-color: rgba(255, 0, 112, 0.4);
   --outline-on-focus-visible: #F1B2CE;
   --underline-on-hover: #F1B2CE;
+  --in-section-title-color: #FF0070;
   --page-bg: url(/images/cover-image-dark.png);
   --after-paragraph-margin: 20px;
   --after-title-margin: 20px;
@@ -25,7 +26,7 @@
 @media (width >=768px) {
   :root {
     --after-section-padding: 80px;
-    --after-gallery-padding: 52px;
+    --after-gallery-padding: 60px;
   }
 }
 

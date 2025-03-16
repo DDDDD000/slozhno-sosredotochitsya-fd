@@ -25,6 +25,7 @@
   border-inline-start: 1px solid var(--stroke-color);
   inline-size: 25px;
   block-size: 25px;
+  align-self: end;
 }
 
 
@@ -230,7 +231,7 @@
 
   .header__theme-menu {
     margin-block-start: 0;
-    margin-inline-end: 352px;
+    justify-self: center;
   }
 
   .header__theme-menu-list {
@@ -265,11 +266,7 @@
 
 .hard-to-focus__title {
   margin-block-end: var(--after-title-margin);
-  color: var(--accent-color);
-}
-
-.theme-light .hard-to-focus__title {
-  color: var(--title-text-color);
+  color: var(--in-section-title-color);
 }
 
 .hard-to-focus__sub-title {
@@ -288,10 +285,6 @@
     padding-block-start: 60px;
   }
 
-  .theme-dark .hard-to-focus {
-    padding-block-start: 68px;
-  }
-
   .hard-to-focus__title {
     grid-column: 1;
     margin-inline-end: 20px;
@@ -303,21 +296,16 @@
 }
 
 @media (width >=1024px) {
-  .theme-dark .hard-to-focus {
+  .hard-to-focus {
     grid-template-columns: 1fr 649px;
-    padding-block-start: 60px;
   }
 }
 
 /* Начало секии no-concentration */
 
 .no-concentration__title {
-  color: var(--accent-color);
+  color: var(--in-section-title-color);
   margin-block-end: var(--after-title-margin);
-}
-
-.theme-light .no-concentration__title {
-  color: var(--title-text-color);
 }
 
 .no-concentration__sub-title {
@@ -352,12 +340,8 @@
 /* Начало секции ho-to-concentrate */
 
 .how-to-concentrate__title {
-  color: var(--accent-color);
+  color: var(--in-section-title-color);
   margin-block-end: var(--after-title-margin);
-}
-
-.theme-light .how-to-concentrate__title {
-  color: var(--title-text-color);
 }
 
 .advices-title {
@@ -413,7 +397,7 @@
     grid-template-rows: 23px repeat(4, 1fr);
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
-    max-block-size: 875px;
+    max-block-size: 883px;
   }
 
   .gallery__title {
@@ -458,8 +442,7 @@
 }
 
 .footer__title {
-  padding-block-start: 251px;
-  padding-block-end: 250px;
+  align-self: center;
   text-shadow: 2px 2px 0 var(--accent-color);
   text-align: center;
 }
@@ -475,10 +458,6 @@
     margin-inline-start: 0;
   }
 
-  .footer__title {
-    padding-block-start: 418px;
-    padding-block-end: 417px;
-  }
 }
 
 @media (width >=1024px) {
@@ -493,7 +472,6 @@
   }
 
   .footer__title {
-    padding-block: 274px;
     grid-column: span 2;
   }
 }
